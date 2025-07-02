@@ -1,0 +1,64 @@
+baseURL = 'https://haeun.github.io/hugo-developmentudy-blog/'
+languageCode = 'ko-kr'
+title = 'Developmentudy Blog'
+theme = 'PaperMod'
+
+[params]
+  # 기본 메타데이터
+  description = "개발 공부와 학습 내용을 기록하는 블로그입니다."
+  author = "Haeun"
+
+  # 메뉴 설정
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  # 홈페이지 설정
+  ShowSummary = true
+  ShowToc = true
+  TocOpen = true
+
+  # 소셜 미디어
+  [params.socialIcons]
+    github = "https://github.com/haeun"
+
+  # 색상 테마 (선택사항)
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

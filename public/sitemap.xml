@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/about/</loc>
+    <lastmod>2025-07-02T22:21:19+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/blog/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/categories/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/hugo/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/posts/my-first-post/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/papermod/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/posts/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo-developmentudy-blog/categories/%EA%B0%9C%EB%B0%9C/</loc>
+    <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url>
+</urlset>

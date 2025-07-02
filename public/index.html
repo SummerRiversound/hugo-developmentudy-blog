@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.147.9"><script src="/hugo-developmentudy-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=hugo-developmentudy-blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -10,17 +10,17 @@
 
 <meta name="description" content="개발 공부와 학습 내용을 기록하는 블로그입니다.">
 <meta name="author" content="Haeun">
-<link rel="canonical" href="http://localhost:1313/hugo-developmentudy-blog/">
-<link crossorigin="anonymous" href="/hugo-developmentudy-blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/hugo-developmentudy-blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/hugo-developmentudy-blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/hugo-developmentudy-blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/hugo-developmentudy-blog/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/hugo-developmentudy-blog/safari-pinned-tab.svg">
+<link rel="canonical" href="//localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2724cf89fae49ca990b79d50a9d4b55d3fcd6601e780be0cbe58ea4c1a56135a.css" integrity="sha256-JyTPifrknKmQt51QqdS1XT/NZgHngL4MvljqTBpWE1o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/hugo-developmentudy-blog/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/hugo-developmentudy-blog/">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="//localhost:1313/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,6 +58,218 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="/css/custom.css">
+
+<style>
+ 
+@media (min-width: 1200px) {
+  .post-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-single {
+     
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-toc-sidebar {
+    position: fixed;
+    top: 6rem;
+    right: calc(50% + 600px + 2rem);
+    width: 280px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .post-toc-sidebar .toc {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-toc-sidebar .toc details {
+    border: none;
+    background: none;
+  }
+
+  .post-toc-sidebar .toc details summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .post-toc-sidebar .toc .inner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-toc-sidebar .toc ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .post-toc-sidebar .toc li {
+    margin: 0.5rem 0;
+  }
+
+  .post-toc-sidebar .toc a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+
+  .post-toc-sidebar .toc a:hover {
+    color: var(--primary);
+  }
+
+  .post-toc-sidebar .toc li ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .post-toc-sidebar .toc li ul li {
+    margin: 0.25rem 0;
+  }
+
+  .post-toc-sidebar .toc li ul a {
+    font-size: 0.85rem;
+  }
+}
+
+ 
+@media (max-width: 1800px) {
+  .post-toc-sidebar {
+    opacity: 0;
+  }
+
+   
+  .post-single .toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em;
+  }
+}
+</style>
+<link rel="stylesheet" href="/css/custom.css">
+
+<style>
+ 
+@media (min-width: 1200px) {
+  .post-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-single {
+     
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-toc-sidebar {
+    position: fixed;
+    top: 6rem;
+    right: calc(50% + 600px + 2rem);
+    width: 280px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .post-toc-sidebar .toc {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-toc-sidebar .toc details {
+    border: none;
+    background: none;
+  }
+
+  .post-toc-sidebar .toc details summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .post-toc-sidebar .toc .inner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-toc-sidebar .toc ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .post-toc-sidebar .toc li {
+    margin: 0.5rem 0;
+  }
+
+  .post-toc-sidebar .toc a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+
+  .post-toc-sidebar .toc a:hover {
+    color: var(--primary);
+  }
+
+  .post-toc-sidebar .toc li ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .post-toc-sidebar .toc li ul li {
+    margin: 0.25rem 0;
+  }
+
+  .post-toc-sidebar .toc li ul a {
+    font-size: 0.85rem;
+  }
+}
+
+ 
+@media (max-width: 1800px) {
+  .post-toc-sidebar {
+    opacity: 0;
+  }
+
+   
+  .post-single .toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em;
+  }
+}
+</style>
 </head>
 
 <body class="list" id="top">
@@ -75,7 +287,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/hugo-developmentudy-blog/" accesskey="h" title="Developmentudy Blog (Alt + H)">Developmentudy Blog</a>
+            <a href="//localhost:1313/" accesskey="h" title="Developmentudy Blog (Alt + H)">Developmentudy Blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -101,22 +313,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/hugo-developmentudy-blog/posts/" title="Posts">
+                <a href="//localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/hugo-developmentudy-blog/tags/" title="Tags">
+                <a href="//localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/hugo-developmentudy-blog/categories/" title="Categories">
+                <a href="//localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/hugo-developmentudy-blog/about/" title="About">
+                <a href="//localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
@@ -146,7 +358,7 @@ TOC가 뭔가요? TOC는 Table of Contents의 줄임말로, 긴 문서에서 각
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-07-02 22:49:37 +0900 KST'>July 2, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Haeun</footer>
-  <a class="entry-link" aria-label="post link to Hugo PaperMod에서 TOC(목차) 완벽 가이드 - 따라다니는 사이드바 만들기" href="http://localhost:1313/hugo-developmentudy-blog/posts/hugo-papermod-toc-complete-guide/"></a>
+  <a class="entry-link" aria-label="post link to Hugo PaperMod에서 TOC(목차) 완벽 가이드 - 따라다니는 사이드바 만들기" href="//localhost:1313/posts/hugo-papermod-toc-complete-guide/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -162,12 +374,180 @@ PaperMod 테마의 특징 깔끔하고 모던한 디자인 다크/라이트 모�
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-07-02 22:21:17 +0900 KST'>July 2, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haeun</footer>
-  <a class="entry-link" aria-label="post link to Hugo PaperMod 블로그 시작하기" href="http://localhost:1313/hugo-developmentudy-blog/posts/hugo-papermod-blog-start/"></a>
+  <a class="entry-link" aria-label="post link to Hugo PaperMod 블로그 시작하기" href="//localhost:1313/posts/hugo-papermod-blog-start/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">개발에서 테스트란 무엇인가? - 유닛, 통합, E2E 테스트 쉽게 이해하기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>개발에서 테스트란 무엇인가? - 유닛, 통합, E2E 테스트 쉽게 이해하기 개발을 하다 보면 ‘테스트’라는 말을 정말 많이 듣게 됩니다. 그런데 막상 테스트가 뭔지, 왜 해야 하는지, 그리고 어떤 종류가 있는지 헷갈릴 때가 많죠. 오늘은 개발자라면 꼭 알아야 할 테스트의 기본 개념과 유닛/통합/E2E 테스트에 대해 쉽게 정리해보려고 합니다.
+테스트란? 테스트란, 어플리케이션이 요구사항에 맞게 동작하는지 검증하는 행위입니다. 즉, 내가 만든 코드가 제대로 동작하는지, 혹은 수정한 부분이 다른 곳에 영향을 주지 않는지 확인하는 과정이죠.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 01:01:30 +0900 KST'>July 2, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to 개발에서 테스트란 무엇인가? - 유닛, 통합, E2E 테스트 쉽게 이해하기" href="//localhost:1313/posts/what-is-testing-in-dev/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JavaScript 이벤트 완벽 가이드 - 이벤트 핸들링 마스터하기
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JavaScript 이벤트 완벽 가이드 - 이벤트 핸들링 마스터하기 안녕하세요! 오늘은 웹 개발의 핵심인 JavaScript 이벤트에 대해 자세히 알아보겠습니다.
+사용자의 클릭, 키보드 입력, 마우스 움직임 등 모든 상호작용은 이벤트를 통해 처리됩니다. 이 포스팅에서는 이벤트의 기본 개념부터 고급 활용까지 체계적으로 정리해보겠습니다!
+이벤트란? 기본 개념 **이벤트(Event)**는 웹 페이지에서 발생하는 모든 상호작용을 의미합니다. 사용자의 마우스 클릭, 키보드 입력, 페이지 로드 등이 모두 이벤트입니다.
+이벤트의 구성 요소 이벤트 타입: 어떤 종류의 이벤트인지 (click, keydown, load 등) 이벤트 타겟: 이벤트가 발생한 요소 이벤트 핸들러: 이벤트 발생 시 실행될 함수 주요 이벤트 타입들 1. 마우스 이벤트 이벤트 타입 설명 특징 click 마우스 클릭 가장 일반적인 클릭 이벤트 dblclick 더블 클릭 빠르게 두 번 클릭 mousedown 마우스 버튼 누름 버튼을 누르는 순간 mouseup 마우스 버튼 해제 버튼을 떼는 순간 mousemove 마우스 이동 커서가 움직일 때 mouseenter 요소 진입 요소 안으로 들어올 때 (버블링 없음) mouseover 요소 진입 요소 안으로 들어올 때 (버블링 있음) mouseleave 요소 이탈 요소 밖으로 나갈 때 (버블링 없음) mouseout 요소 이탈 요소 밖으로 나갈 때 (버블링 있음) 2. 키보드 이벤트 이벤트 타입 설명 특징 keydown 키 누름 키를 누르는 순간 keyup 키 해제 키를 떼는 순간 keypress 키 입력 문자 키 입력 시 (폐지됨) 3. 폼 이벤트 이벤트 타입 설명 submit 폼 제출 reset 폼 초기화 input 입력값 변경 change 값 변경 완료 focus 포커스 획득 blur 포커스 상실 4. 문서/윈도우 이벤트 이벤트 타입 설명 load 페이지 로드 완료 DOMContentLoaded DOM 로드 완료 resize 윈도우 크기 변경 scroll 스크롤 beforeunload 페이지 이탈 전 이벤트 핸들러 등록 방법 1. 인라인 이벤트 핸들러 (비권장) &lt;button onclick=&#34;handleClick()&#34;&gt;클릭하세요&lt;/button&gt; &lt;script&gt; function handleClick() { console.log(&#39;버튼이 클릭되었습니다!&#39;); } &lt;/script&gt; 단점:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-20 00:00:00 +0900 KST'>December 20, 2024</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to JavaScript 이벤트 완벽 가이드 - 이벤트 핸들링 마스터하기" href="//localhost:1313/posts/javascript-events-complete-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기 안녕하세요! 오늘은 JavaScript의 핵심 기능 중 하나인 타이머 함수들에 대해 자세히 알아보겠습니다.
+웹 개발에서 타이머는 애니메이션, 자동 저장, 폴링, 지연 실행 등 다양한 용도로 사용되는 필수적인 기능입니다. 이 포스팅에서는 setTimeout, setInterval의 기본 개념부터 실전 활용까지 체계적으로 정리해보겠습니다!
+호출 스케줄링이란? 기본 개념 **호출 스케줄링(Call Scheduling)**은 함수를 명시적으로 호출하지 않고, 일정 시간이 경과된 후에 자동으로 실행되도록 예약하는 것을 말합니다.
+일반적인 함수 호출 vs 스케줄링 // 일반적인 함수 호출 (즉시 실행) function add(a, b) { return a &#43; b; } console.log(add(2, 5)); // 즉시 실행: 7 // 스케줄링된 함수 호출 (지연 실행) setTimeout(() =&gt; { console.log(add(2, 5)); // 1초 후 실행: 7 }, 1000); 타이머 함수의 종류 JavaScript에는 두 가지 주요 타이머 함수가 있습니다:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-19 00:00:00 +0900 KST'>December 19, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기" href="//localhost:1313/posts/javascript-timer-complete-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까?
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까? 안녕하세요! 이번에는 **디바운스(Debounce)**와 **쓰로틀(Throttle)**의 차이점을 명확히 이해하고, 실전에서 언제 어떤 것을 사용해야 하는지 알아보겠습니다.
+핵심 차이점 특징 디바운스 쓰로틀 실행 시점 마지막 이벤트 후 일정 시간 지난 후 일정 시간마다 한 번씩 실행 횟수 그룹의 마지막에 1번만 주기적으로 여러 번 적합한 상황 입력 완료 후 실행 실시간 반응 필요 시각적 비교 디바운스 (Debounce) 이벤트: |--|--|--|--|--|--|--|--|--|--| 실행: | 연속된 이벤트를 그룹화하여 마지막에 한 번만 실행 쓰로틀 (Throttle) 이벤트: |--|--|--|--|--|--|--|--|--|--| 실행: | | | | | | 일정 주기마다 한 번씩 실행 언제 어떤 것을 사용할까? 디바운스 사용 시기 검색창 자동완성: 사용자가 타이핑을 멈춘 후 검색 폼 자동 저장: 입력 완료 후 저장 윈도우 리사이즈: 크기 조정 완료 후 레이아웃 재계산 쓰로틀 사용 시기 스크롤 이벤트: 무한 스크롤, 고정 헤더 게임 캐릭터 이동: 마우스/키보드 입력 처리 실시간 차트 업데이트: 주기적인 데이터 갱신 실전 예제: 검색 vs 스크롤 // 디바운스: 검색창 (입력 완료 후 실행) const searchInput = document.getElementById(&#39;search&#39;); searchInput.addEventListener(&#39;input&#39;, debounce((e) =&gt; { fetchSearchResults(e.target.value); }, 300)); // 쓰로틀: 스크롤 (주기적 실행) window.addEventListener(&#39;scroll&#39;, throttle(() =&gt; { updateHeaderPosition(); }, 100)); 고급 활용: React Hook // 커스텀 디바운스 Hook function useDebounce(value, delay) { const [debouncedValue, setDebouncedValue] = useState(value); useEffect(() =&gt; { const handler = setTimeout(() =&gt; { setDebouncedValue(value); }, delay); return () =&gt; { clearTimeout(handler); }; }, [value, delay]); return debouncedValue; } // 커스텀 쓰로틀 Hook function useThrottle(callback, delay) { const lastRun = useRef(Date.now()); return useCallback((...args) =&gt; { if (Date.now() - lastRun.current &gt;= delay) { callback(...args); lastRun.current = Date.now(); } }, [callback, delay]); } // 사용 예시 function SearchComponent() { const [query, setQuery] = useState(&#39;&#39;); const debouncedQuery = useDebounce(query, 300); useEffect(() =&gt; { if (debouncedQuery) { fetchSearchResults(debouncedQuery); } }, [debouncedQuery]); return ( &lt;input value={query} onChange={(e) =&gt; setQuery(e.target.value)} placeholder=&#34;검색어를 입력하세요&#34; /&gt; ); } 성능 최적화 팁 1. 적절한 딜레이 설정 // 검색: 300ms (사용자가 타이핑을 멈출 시간) const searchDebounce = debounce(searchFunction, 300); // 스크롤: 100ms (부드러운 반응) const scrollThrottle = throttle(scrollFunction, 100); // 리사이즈: 500ms (레이아웃 재계산 비용 고려) const resizeDebounce = debounce(resizeFunction, 500); 2. 메모리 누수 방지 // 컴포넌트 언마운트 시 정리 useEffect(() =&gt; { const debouncedHandler = debounce(handleInput, 300); input.addEventListener(&#39;input&#39;, debouncedHandler); return () =&gt; { input.removeEventListener(&#39;input&#39;, debouncedHandler); }; }, []); 3. 조건부 적용 // 네트워크 상태에 따른 동적 조정 function adaptiveDebounce(callback, baseDelay = 300) { const isSlowConnection = navigator.connection?.effectiveType === &#39;slow-2g&#39;; const delay = isSlowConnection ? baseDelay * 2 : baseDelay; return debounce(callback, delay); } 실제 프로젝트 적용 사례 1. 쇼핑몰 검색 기능 class SearchManager { constructor() { this.searchInput = document.getElementById(&#39;search&#39;); this.resultsContainer = document.getElementById(&#39;results&#39;); this.setupEventListeners(); } setupEventListeners() { // 디바운스: 검색 요청 최적화 this.searchInput.addEventListener(&#39;input&#39;, debounce((e) =&gt; { this.performSearch(e.target.value); }, 300)); // 쓰로틀: 검색 결과 스크롤 this.resultsContainer.addEventListener(&#39;scroll&#39;, throttle(() =&gt; { this.handleInfiniteScroll(); }, 200)); } async performSearch(query) { if (query.length &lt; 2) return; try { const results = await fetch(`/api/search?q=${query}`); this.displayResults(await results.json()); } catch (error) { console.error(&#39;검색 실패:&#39;, error); } } handleInfiniteScroll() { const { scrollTop, scrollHeight, clientHeight } = this.resultsContainer; if (scrollTop &#43; clientHeight &gt;= scrollHeight - 100) { this.loadMoreResults(); } } } 2. 대시보드 실시간 업데이트 class DashboardManager { constructor() { this.charts = document.querySelectorAll(&#39;.chart&#39;); this.setupRealTimeUpdates(); } setupRealTimeUpdates() { // 쓰로틀: 차트 업데이트 (실시간성 유지) window.addEventListener(&#39;resize&#39;, throttle(() =&gt; { this.resizeCharts(); }, 100)); // 디바운스: 설정 저장 (입력 완료 후) this.setupAutoSave(); } setupAutoSave() { const settingsForm = document.getElementById(&#39;settings&#39;); settingsForm.addEventListener(&#39;change&#39;, debounce(() =&gt; { this.saveSettings(); }, 1000)); } async saveSettings() { const formData = new FormData(settingsForm); try { await fetch(&#39;/api/settings&#39;, { method: &#39;POST&#39;, body: formData }); console.log(&#39;설정 저장 완료&#39;); } catch (error) { console.error(&#39;설정 저장 실패:&#39;, error); } } } 디버깅 팁 1. 실행 횟수 모니터링 function createMonitoredDebounce(callback, delay) { let callCount = 0; const debouncedFunction = debounce((...args) =&gt; { callCount&#43;&#43;; console.log(`디바운스 실행 횟수: ${callCount}`); callback(...args); }, delay); return debouncedFunction; } function createMonitoredThrottle(callback, delay) { let callCount = 0; const throttledFunction = throttle((...args) =&gt; { callCount&#43;&#43;; console.log(`쓰로틀 실행 횟수: ${callCount}`); callback(...args); }, delay); return throttledFunction; } 2. 성능 측정 function measurePerformance(func, name) { return function (...args) { const start = performance.now(); const result = func.apply(this, args); const end = performance.now(); console.log(`${name} 실행 시간: ${end - start}ms`); return result; }; } // 사용 예시 const optimizedSearch = measurePerformance( debounce(searchFunction, 300), &#39;디바운스 검색&#39; ); 마치며 디바운스와 쓰로틀은 각각의 장단점이 있으며, 사용자 경험과 성능을 모두 고려하여 적절히 선택해야 합니다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-18 00:00:00 +0900 KST'>December 18, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to 디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까?" href="//localhost:1313/posts/debounce-throttle-complete-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">디바운스(Debounce) 완벽 가이드 - 입력 이벤트 최적화의 핵심
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>디바운스(Debounce) 완벽 가이드 - 입력 이벤트 최적화의 핵심 안녕하세요! 오늘은 프론트엔드 개발에서 자주 쓰이는 디바운스(Debounce) 패턴에 대해 알아보겠습니다.
+디바운스란? 디바운스는 짧은 시간 간격으로 연속해서 발생하는 이벤트를 그룹화하여, 일정 시간이 지난 후 단 한 번만 이벤트 핸들러가 실행되도록 만드는 기법입니다.
+언제 사용할까? 검색창 입력 시 Ajax 요청 최적화 윈도우 리사이즈, 스크롤 이벤트 최적화 자동 저장, 자동 완성 등 빈번한 입력 이벤트 처리 동작 원리 이벤트가 발생할 때마다 타이머를 새로 설정합니다. 이전에 설정된 타이머가 있다면 취소합니다. 마지막 이벤트 발생 후 지정한 시간(delay) 동안 추가 이벤트가 없으면 콜백이 실행됩니다. 실전 예제: 입력창 자동완성 최적화 &lt;input type=&#34;text&#34; id=&#34;search&#34; placeholder=&#34;검색어를 입력하세요&#34; /&gt; &lt;div id=&#34;result&#34;&gt;&lt;/div&gt; &lt;script&gt; const input = document.getElementById(&#39;search&#39;); const result = document.getElementById(&#39;result&#39;); // 디바운스 함수 구현 function debounce(callback, delay) { let timerId; return function (...args) { if (timerId) clearTimeout(timerId); timerId = setTimeout(() =&gt; { callback.apply(this, args); }, delay); }; } // Ajax 요청을 흉내내는 함수 function fakeAjax(query) { result.textContent = `검색 결과: ${query}`; } // 디바운스 적용 input.addEventListener(&#39;input&#39;, debounce((e) =&gt; { fakeAjax(e.target.value); }, 300)); &lt;/script&gt; 설명:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-18 00:00:00 +0900 KST'>December 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to 디바운스(Debounce) 완벽 가이드 - 입력 이벤트 최적화의 핵심" href="//localhost:1313/posts/javascript-debounce-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심 안녕하세요! 이번에는 프론트엔드 개발에서 자주 쓰이는 쓰로틀(Throttle) 패턴에 대해 알아보겠습니다.
+쓰로틀이란? 쓰로틀은 짧은 시간 간격으로 연속해서 발생하는 이벤트를 일정 시간마다 한 번씩만 실행되도록 제한하는 기법입니다.
+언제 사용할까? 스크롤 이벤트 최적화 (무한 스크롤, 고정 헤더 등) 윈도우 리사이즈 이벤트 최적화 마우스 이동, 드래그 등 고빈도 이벤트 처리 동작 원리 이벤트가 발생하면, 지정한 시간(delay) 동안 추가 이벤트를 무시합니다. delay가 지난 후 다시 이벤트가 발생하면 콜백이 실행됩니다. 이 과정을 반복하여, 최대 1초에 한 번 등으로 호출 빈도를 제한할 수 있습니다. 실전 예제: 스크롤 이벤트 최적화 &lt;div class=&#34;container&#34; style=&#34;width:300px;height:300px;overflow:scroll;background:#eee;&#34;&gt; &lt;div style=&#34;height:1000px;&#34;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div&gt;일반 이벤트 핸들러 호출 횟수: &lt;span id=&#34;normal-count&#34;&gt;0&lt;/span&gt;&lt;/div&gt; &lt;div&gt;쓰로틀 이벤트 핸들러 호출 횟수: &lt;span id=&#34;throttle-count&#34;&gt;0&lt;/span&gt;&lt;/div&gt; &lt;script&gt; const container = document.querySelector(&#39;.container&#39;); const normalCount = document.getElementById(&#39;normal-count&#39;); const throttleCount = document.getElementById(&#39;throttle-count&#39;); // 쓰로틀 함수 구현 function throttle(callback, delay) { let waiting = false; return function (...args) { if (!waiting) { callback.apply(this, args); waiting = true; setTimeout(() =&gt; { waiting = false; }, delay); } }; } let normal = 0; let throttled = 0; // 일반 이벤트 (매번 실행) container.addEventListener(&#39;scroll&#39;, () =&gt; { normalCount.textContent = &#43;&#43;normal; }); // 쓰로틀 적용 (최대 1초에 한 번만 실행) container.addEventListener(&#39;scroll&#39;, throttle(() =&gt; { throttleCount.textContent = &#43;&#43;throttled; }, 1000)); &lt;/script&gt; 설명:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-18 00:00:00 +0900 KST'>December 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to 쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심" href="//localhost:1313/posts/javascript-throttle-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기 안녕하세요! 오늘은 JavaScript 개발에서 가장 중요한 개념 중 하나인 비동기 프로그래밍에 대해 자세히 알아보려고 합니다.
+웹 개발을 하다 보면 “동기&#34;와 “비동기&#34;라는 용어를 자주 접하게 되는데, 이 두 개념을 제대로 이해하는 것이 현대 JavaScript 개발의 핵심입니다. 이 포스팅에서는 기본 개념부터 실제 활용 사례까지 체계적으로 정리해보겠습니다!
+동기 vs 비동기란? 기본 개념 JavaScript는 싱글 스레드(Single Thread) 언어입니다. 이는 한 번에 하나의 작업만 처리할 수 있다는 의미입니다. 하지만 실제로는 여러 작업이 동시에 처리되는 것처럼 보이는데, 이는 동기와 비동기 처리 방식의 차이 때문입니다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-17 00:00:00 +0900 KST'>December 17, 2024</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기" href="//localhost:1313/posts/javascript-async-programming-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JavaScript 이벤트 루프와 태스크 큐 완벽 가이드 - 비동기 처리의 핵심
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JavaScript 이벤트 루프와 태스크 큐 완벽 가이드 - 비동기 처리의 핵심 안녕하세요! 오늘은 JavaScript의 핵심 개념 중 하나인 **이벤트 루프(Event Loop)**와 **태스크 큐(Task Queue)**에 대해 자세히 알아보려고 합니다.
+JavaScript가 싱글 스레드임에도 불구하고 어떻게 비동기 작업을 처리할 수 있는지, 그리고 실제로 어떤 순서로 코드가 실행되는지 이해하는 것은 고급 JavaScript 개발자에게 필수적인 지식입니다.
+JavaScript는 싱글 스레드인가요? 기본 개념 JavaScript는 싱글 스레드(Single Thread) 언어입니다. 이는 한 번에 하나의 작업만 처리할 수 있다는 의미입니다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-16 00:00:00 +0900 KST'>December 16, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to JavaScript 이벤트 루프와 태스크 큐 완벽 가이드 - 비동기 처리의 핵심" href="//localhost:1313/posts/javascript-event-loop-task-queue/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="//localhost:1313/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/hugo-developmentudy-blog/">Developmentudy Blog</a></span> · 
+        <span>&copy; 2025 <a href="//localhost:1313/">Developmentudy Blog</a></span> · 
 
     <span>
         Powered by

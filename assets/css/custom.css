@@ -1,0 +1,93 @@
+/* 사이드바 TOC 스타일 */
+@media (min-width: 1200px) {
+  .post-single-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .post-main {
+    grid-column: 1;
+    min-width: 0;
+  }
+  .post-toc {
+    grid-column: 2;
+    position: relative;
+    min-width: 0;
+  }
+  .post-toc .toc {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    margin: 0;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
+  .post-toc .toc details {
+    border: none;
+    background: none;
+  }
+  .post-toc .toc details summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .post-toc .toc .inner {
+    margin: 0;
+    padding: 0;
+  }
+  .post-toc .toc ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .post-toc .toc li {
+    margin: 0.5rem 0;
+  }
+  .post-toc .toc a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+  .post-toc .toc a:hover {
+    color: var(--primary);
+  }
+  .post-toc .toc li ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+  .post-toc .toc li ul li {
+    margin: 0.25rem 0;
+  }
+  .post-toc .toc li ul a {
+    font-size: 0.85rem;
+  }
+}
+
+/* 모바일에서는 기존 스타일 유지 */
+@media (max-width: 1199px) {
+  .post-toc {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .post-toc .toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em;
+    position: static;
+    max-height: none;
+  }
+}

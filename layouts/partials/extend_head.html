@@ -1,0 +1,107 @@
+{{ if (fileExists "assets/css/custom.css") }}
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+{{ end }}
+<style>
+/* 사이드바 TOC 스타일 - 컨텐츠 영역을 침범하지 않고 여백에 배치 */
+@media (min-width: 1200px) {
+  .post-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-single {
+    /* 컨텐츠 영역을 1200px로 확장 */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post-toc-sidebar {
+    position: fixed;
+    top: 6rem;
+    right: calc(50% + 600px + 2rem);
+    width: 280px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .post-toc-sidebar .toc {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-toc-sidebar .toc details {
+    border: none;
+    background: none;
+  }
+
+  .post-toc-sidebar .toc details summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .post-toc-sidebar .toc .inner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-toc-sidebar .toc ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .post-toc-sidebar .toc li {
+    margin: 0.5rem 0;
+  }
+
+  .post-toc-sidebar .toc a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+
+  .post-toc-sidebar .toc a:hover {
+    color: var(--primary);
+  }
+
+  .post-toc-sidebar .toc li ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .post-toc-sidebar .toc li ul li {
+    margin: 0.25rem 0;
+  }
+
+  .post-toc-sidebar .toc li ul a {
+    font-size: 0.85rem;
+  }
+}
+
+/* 모바일에서는 기존 스타일 유지 */
+@media (max-width: 1800px) {
+  .post-toc-sidebar {
+    opacity: 0;
+  }
+
+  /* 모바일에서는 기존 TOC 스타일 적용 */
+  .post-single .toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em;
+  }
+}
+</style>

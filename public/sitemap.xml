@@ -2,49 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/hugo/</loc>
+    <loc>//localhost:1313/tags/hugo/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/posts/hugo-papermod-toc-complete-guide/</loc>
+    <loc>//localhost:1313/posts/hugo-papermod-toc-complete-guide/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/papermod/</loc>
+    <loc>//localhost:1313/tags/papermod/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/toc/</loc>
+    <loc>//localhost:1313/tags/toc/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/categories/%EA%B0%9C%EB%B0%9C/</loc>
+    <loc>//localhost:1313/categories/%EA%B0%9C%EB%B0%9C/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/%EA%B0%9C%EB%B0%9C%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+    <loc>//localhost:1313/tags/%EA%B0%9C%EB%B0%9C%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/%EB%AA%A9%EC%B0%A8/</loc>
+    <loc>//localhost:1313/tags/%EB%AA%A9%EC%B0%A8/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%94/</loc>
+    <loc>//localhost:1313/tags/%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%94/</loc>
     <lastmod>2025-07-02T22:49:37+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-07-02T22:25:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2025-07-02T22:21:19+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/tags/blog/</loc>
+    <loc>//localhost:1313/tags/blog/</loc>
     <lastmod>2025-07-02T22:21:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hugo-developmentudy-blog/posts/hugo-papermod-blog-start/</loc>
+    <loc>//localhost:1313/posts/hugo-papermod-blog-start/</loc>
     <lastmod>2025-07-02T22:21:17+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/e2e/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%EA%B0%9C%EB%B0%9C%EB%AC%B8%ED%99%94/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/what-is-testing-in-dev/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%EC%9C%A0%EB%8B%9B%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%ED%86%B5%ED%95%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+    <lastmod>2024-10-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/mpa/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/spa/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%EA%B8%B0%EC%88%A0%EC%84%A0%ED%83%9D/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/should-we-use-react-tech-choice/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/</loc>
+    <lastmod>2024-10-27T00:00:00+09:00</lastmod>
   </url>
 </urlset>

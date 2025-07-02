@@ -15,10 +15,13 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-  # 홈페이지 설정
-  ShowSummary = true
+  # TOC (목차) 설정
   ShowToc = true
   TocOpen = true
+  TocSidebar = true  # 우측 사이드바에 고정
+
+  # 홈페이지 설정
+  ShowSummary = true
 
   # 소셜 미디어 (PaperMod 형식에 맞게 수정)
   [params.socialIcons]

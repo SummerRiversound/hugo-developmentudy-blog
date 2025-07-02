@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Developmentudy Blog</title><link>https://haeun.github.io/hugo-developmentudy-blog/</link><description>Recent content on Developmentudy Blog</description><generator>Hugo -- 0.147.9</generator><language>ko-kr</language><lastBuildDate>Wed, 02 Jul 2025 22:21:19 +0900</lastBuildDate><atom:link href="https://haeun.github.io/hugo-developmentudy-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://haeun.github.io/hugo-developmentudy-blog/about/</link><pubDate>Wed, 02 Jul 2025 22:21:19 +0900</pubDate><guid>https://haeun.github.io/hugo-developmentudy-blog/about/</guid><description>개발자 Haeun의 소개 페이지입니다.</description></item><item><title>Hugo PaperMod 블로그 시작하기</title><link>https://haeun.github.io/hugo-developmentudy-blog/posts/my-first-post/</link><pubDate>Wed, 02 Jul 2025 22:21:17 +0900</pubDate><guid>https://haeun.github.io/hugo-developmentudy-blog/posts/my-first-post/</guid><description>Hugo와 PaperMod 테마를 사용해서 개인 블로그를 만들어보았습니다.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Developmentudy Blog</title>
+    <link>http://localhost:1313/hugo-developmentudy-blog/</link>
+    <description>Recent content on Developmentudy Blog</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 02 Jul 2025 22:49:37 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-developmentudy-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그에서 TOC(목차) 사용하기</title>
+      <link>http://localhost:1313/hugo-developmentudy-blog/posts/%EB%91%90%EB%B2%88%EC%A7%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Wed, 02 Jul 2025 22:49:37 +0900</pubDate>
+      <guid>http://localhost:1313/hugo-developmentudy-blog/posts/%EB%91%90%EB%B2%88%EC%A7%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</guid>
+      <description>PaperMod 테마에서 우측 사이드바에 따라다니는 목차를 설정하는 방법을 알아봅니다.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/hugo-developmentudy-blog/about/</link>
+      <pubDate>Wed, 02 Jul 2025 22:21:19 +0900</pubDate>
+      <guid>http://localhost:1313/hugo-developmentudy-blog/about/</guid>
+      <description>개발자 Haeun의 소개 페이지입니다.</description>
+    </item>
+    <item>
+      <title>Hugo PaperMod 블로그 시작하기</title>
+      <link>http://localhost:1313/hugo-developmentudy-blog/posts/my-first-post/</link>
+      <pubDate>Wed, 02 Jul 2025 22:21:17 +0900</pubDate>
+      <guid>http://localhost:1313/hugo-developmentudy-blog/posts/my-first-post/</guid>
+      <description>Hugo와 PaperMod 테마를 사용해서 개인 블로그를 만들어보았습니다.</description>
+    </item>
+  </channel>
+</rss>

@@ -20,9 +20,14 @@ theme = 'PaperMod'
   ShowToc = true
   TocOpen = true
 
-  # 소셜 미디어
+  # 소셜 미디어 (PaperMod 형식에 맞게 수정)
   [params.socialIcons]
     github = "https://github.com/haeun"
+
+  # 스키마 설정
+  [params.schema]
+    publisherType = "Person"
+    sameAs = ["https://github.com/haeun"]
 
   # 색상 테마 (선택사항)
   [params.fuseOpts]

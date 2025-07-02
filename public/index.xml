@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 02 Jul 2025 22:49:37 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/hugo-developmentudy-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo 블로그에서 TOC(목차) 사용하기</title>
+      <title>Hugo PaperMod에서 TOC(목차) 완벽 가이드 - 따라다니는 사이드바 만들기</title>
       <link>http://localhost:1313/hugo-developmentudy-blog/posts/%EB%91%90%EB%B2%88%EC%A7%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</link>
       <pubDate>Wed, 02 Jul 2025 22:49:37 +0900</pubDate>
       <guid>http://localhost:1313/hugo-developmentudy-blog/posts/%EB%91%90%EB%B2%88%EC%A7%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</guid>
-      <description>PaperMod 테마에서 우측 사이드바에 따라다니는 목차를 설정하는 방법을 알아봅니다.</description>
+      <description>Hugo PaperMod 테마에서 우측 사이드바에 따라다니는 TOC(Table of Contents)를 설정하고 커스터마이징하는 방법을 상세히 알아봅니다.</description>
     </item>
     <item>
       <title>About</title>

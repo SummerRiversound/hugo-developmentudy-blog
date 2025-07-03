@@ -1,7 +1,7 @@
 +++
 title = "JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기"
 date = 2024-12-19T00:00:00+09:00
-draft = true
+draft = false
 description = "JavaScript의 타이머 함수들(setTimeout, setInterval)의 개념, 사용법, 실전 예제와 주의사항까지 완벽하게 정리합니다."
 tags = ["javascript", "타이머", "setTimeout", "setInterval", "비동기", "스케줄링"]
 categories = ["개발"]
@@ -32,6 +32,10 @@ setTimeout(() => {
 }, 1000);
 ```
 
+만약 함수를 명시적으로 호출하지 않고 일정 시간이 경과된 이후에 호출되도록 함수 호출을 예약하려면, 타이머 함수를 사용해야 합니다.
+
+이렇게 **타이머 함수를 사용하여 명시적으로 호출하지 않고 일정 시간이 경과된 이후에 호출되도록 함수 호출을 예약하는 것**을 **호출 스케줄링이라고 합니다.**
+
 ## 타이머 함수의 종류
 
 JavaScript에는 두 가지 주요 타이머 함수가 있습니다:
@@ -49,40 +53,35 @@ const timeoutId = setTimeout(func|code[, delay, param1, param2, ...]);
 ### 매개변수 설명
 | 매개변수 | 설명 |
 |----------|------|
-| `func` | 타이머 만료 후 호출될 콜백 함수 |
-| `delay` | 타이머 만료 시간 (밀리초, 기본값: 0) |
-| `param1, param2, ...` | 콜백 함수에 전달할 인수들 |
+| `func` | 타이머가 만료된 뒤 호출될 콜백 함수. 콜백 함수 대신 코드를 문자열로 전달할 수 있다. 이때 코드 문자열은 타이머가 만료된 뒤 해석되고 실행된다. |
+| `delay` | 타이머 만료 시간(밀리초(ms) 단위). setTimeout 함수는 delay 시간으로 단 한 번 동작하는 타이머를 생성한다. 인수 전달을 생략한 경우 기본값 0이 지정된다. |
+| `param1, param2, ...` | 호출 스케줄링된 콜백 함수에 전달해야 할 인수가 존재하는 경우 세 번째 이후의 인수로 전달할 수 있다. |
+
+setTimeout 함수는 생성된 타이머를 식별할 수 있는 고유한 id를 반환합니다.
+
+setTimeout 함수가 반환한 타이머 id는:
+- **브라우저 환경**: 숫자
+- **Node.js 환경**: 객체
 
 ### 기본 사용법
 ```javascript
-// 1초 후 실행
-setTimeout(() => {
-  console.log('1초 후 실행됨!');
-}, 1000);
+// 1초(1000ms) 후 타이머가 만료되면 콜백 함수가 호출된다
+setTimeout(() => console.log('Hi!'), 1000);
 
-// 매개변수 전달
-setTimeout((name) => {
-  console.log(`안녕하세요, ${name}님!`);
-}, 1000, '김개발');
+// 세 번째 인수로 문자열 'Lee' 전달
+setTimeout((name) => console.log(`Hi! ${name}.`), 1000, 'Lee');
 
-// delay 생략 (즉시 실행)
-setTimeout(() => {
-  console.log('즉시 실행!');
-});
+// 두 번째 인수(delay)를 생략하면 기본값 0이 지정된다
+setTimeout(() => console.log('Hello!'));
 ```
 
 ### 타이머 취소하기
+setTimeout 함수가 반환한 타이머 id를 clearTimeout 함수의 인수로 전달하여 타이머를 취소할 수 있습니다.
+
 ```javascript
-// 타이머 ID 저장
-const timerId = setTimeout(() => {
-  console.log('이 메시지는 실행되지 않습니다');
-}, 3000);
-
-console.log('타이머 ID:', timerId);
-
-// 타이머 취소
+const timerId = setTimeout(() => console.log('Hi!'), 1000);
+console.log(timerId);
 clearTimeout(timerId);
-console.log('타이머가 취소되었습니다');
 ```
 
 ## setInterval - 반복 실행되는 타이머
@@ -91,6 +90,10 @@ console.log('타이머가 취소되었습니다');
 ```javascript
 const intervalId = setInterval(func|code[, delay, param1, param2, ...]);
 ```
+
+setInterval 함수는 두 번째 인수로 전달받은 시간(ms, 1/1000초)으로 반복 동작하는 타이머를 생성합니다.
+
+setInterval의 첫 번째 인수인 콜백 함수는 두 번째 인수로 전달받은 시간이 경과할 때마다 반복 실행되도록 호출 스케줄링됩니다.
 
 ### 기본 사용법
 ```javascript

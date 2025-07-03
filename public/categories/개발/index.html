@@ -77,11 +77,12 @@
   .post-toc-sidebar {
     position: fixed;
     top: 6rem;
-    left: calc(50% + 600px + 2rem);
+    right: calc(50% + 600px + 2rem);
     width: 280px;
     max-height: calc(100vh - 8rem);
     overflow-y: auto;
     z-index: 100;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .post-toc-sidebar .toc {
@@ -147,9 +148,9 @@
 }
 
  
-@media (max-width: 1199px) {
+@media (max-width: 1800px) {
   .post-toc-sidebar {
-    display: none;
+    opacity: 0;
   }
 
    
@@ -182,11 +183,12 @@
   .post-toc-sidebar {
     position: fixed;
     top: 6rem;
-    left: calc(50% + 600px + 2rem);
+    right: calc(50% + 600px + 2rem);
     width: 280px;
     max-height: calc(100vh - 8rem);
     overflow-y: auto;
     z-index: 100;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .post-toc-sidebar .toc {
@@ -252,9 +254,9 @@
 }
 
  
-@media (max-width: 1199px) {
+@media (max-width: 1800px) {
   .post-toc-sidebar {
-    display: none;
+    opacity: 0;
   }
 
    
@@ -381,8 +383,44 @@ PaperMod 테마의 특징 깔끔하고 모던한 디자인 다크/라이트 모�
 테스트란? 테스트란, 어플리케이션이 요구사항에 맞게 동작하는지 검증하는 행위입니다. 즉, 내가 만든 코드가 제대로 동작하는지, 혹은 수정한 부분이 다른 곳에 영향을 주지 않는지 확인하는 과정이죠.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-28 00:00:00 +0900 KST'>October 28, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haeun</footer>
+  <footer class="entry-footer"><span title='2025-07-02 01:01:30 +0900 KST'>July 2, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haeun</footer>
   <a class="entry-link" aria-label="post link to 개발에서 테스트란 무엇인가? - 유닛, 통합, E2E 테스트 쉽게 이해하기" href="//localhost:1313/posts/what-is-testing-in-dev/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기 안녕하세요! 오늘은 JavaScript의 핵심 기능 중 하나인 타이머 함수들에 대해 자세히 알아보겠습니다.
+웹 개발에서 타이머는 애니메이션, 자동 저장, 폴링, 지연 실행 등 다양한 용도로 사용되는 필수적인 기능입니다. 이 포스팅에서는 setTimeout, setInterval의 기본 개념부터 실전 활용까지 체계적으로 정리해보겠습니다!
+호출 스케줄링이란? 기본 개념 **호출 스케줄링(Call Scheduling)**은 함수를 명시적으로 호출하지 않고, 일정 시간이 경과된 후에 자동으로 실행되도록 예약하는 것을 말합니다.
+일반적인 함수 호출 vs 스케줄링 // 일반적인 함수 호출 (즉시 실행) function add(a, b) { return a &#43; b; } console.log(add(2, 5)); // 즉시 실행: 7 // 스케줄링된 함수 호출 (지연 실행) setTimeout(() =&gt; { console.log(add(2, 5)); // 1초 후 실행: 7 }, 1000); 만약 함수를 명시적으로 호출하지 않고 일정 시간이 경과된 이후에 호출되도록 함수 호출을 예약하려면, 타이머 함수를 사용해야 합니다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-19 00:00:00 +0900 KST'>December 19, 2024</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기" href="//localhost:1313/posts/javascript-timer-complete-guide/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까?
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까? 안녕하세요! 이번에는 **디바운스(Debounce)**와 **쓰로틀(Throttle)**의 차이점을 명확히 이해하고, 실전에서 언제 어떤 것을 사용해야 하는지 알아보겠습니다.
+핵심 차이점 특징 디바운스 쓰로틀 실행 시점 마지막 이벤트 후 일정 시간 지난 후 일정 시간마다 한 번씩 실행 횟수 그룹의 마지막에 1번만 주기적으로 여러 번 적합한 상황 입력 완료 후 실행 실시간 반응 필요 시각적 비교 디바운스 (Debounce) 이벤트: |--|--|--|--|--|--|--|--|--|--| 실행: | 연속된 이벤트를 그룹화하여 마지막에 한 번만 실행 쓰로틀 (Throttle) 이벤트: |--|--|--|--|--|--|--|--|--|--| 실행: | | | | | | 일정 주기마다 한 번씩 실행 언제 어떤 것을 사용할까? 디바운스 사용 시기 검색창 자동완성: 사용자가 타이핑을 멈춘 후 검색 폼 자동 저장: 입력 완료 후 저장 윈도우 리사이즈: 크기 조정 완료 후 레이아웃 재계산 쓰로틀 사용 시기 스크롤 이벤트: 무한 스크롤, 고정 헤더 게임 캐릭터 이동: 마우스/키보드 입력 처리 실시간 차트 업데이트: 주기적인 데이터 갱신 실전 예제: 검색 vs 스크롤 // 디바운스: 검색창 (입력 완료 후 실행) const searchInput = document.getElementById(&#39;search&#39;); searchInput.addEventListener(&#39;input&#39;, debounce((e) =&gt; { fetchSearchResults(e.target.value); }, 300)); // 쓰로틀: 스크롤 (주기적 실행) window.addEventListener(&#39;scroll&#39;, throttle(() =&gt; { updateHeaderPosition(); }, 100)); 고급 활용: React Hook // 커스텀 디바운스 Hook function useDebounce(value, delay) { const [debouncedValue, setDebouncedValue] = useState(value); useEffect(() =&gt; { const handler = setTimeout(() =&gt; { setDebouncedValue(value); }, delay); return () =&gt; { clearTimeout(handler); }; }, [value, delay]); return debouncedValue; } // 커스텀 쓰로틀 Hook function useThrottle(callback, delay) { const lastRun = useRef(Date.now()); return useCallback((...args) =&gt; { if (Date.now() - lastRun.current &gt;= delay) { callback(...args); lastRun.current = Date.now(); } }, [callback, delay]); } // 사용 예시 function SearchComponent() { const [query, setQuery] = useState(&#39;&#39;); const debouncedQuery = useDebounce(query, 300); useEffect(() =&gt; { if (debouncedQuery) { fetchSearchResults(debouncedQuery); } }, [debouncedQuery]); return ( &lt;input value={query} onChange={(e) =&gt; setQuery(e.target.value)} placeholder=&#34;검색어를 입력하세요&#34; /&gt; ); } 성능 최적화 팁 1. 적절한 딜레이 설정 // 검색: 300ms (사용자가 타이핑을 멈출 시간) const searchDebounce = debounce(searchFunction, 300); // 스크롤: 100ms (부드러운 반응) const scrollThrottle = throttle(scrollFunction, 100); // 리사이즈: 500ms (레이아웃 재계산 비용 고려) const resizeDebounce = debounce(resizeFunction, 500); 2. 메모리 누수 방지 // 컴포넌트 언마운트 시 정리 useEffect(() =&gt; { const debouncedHandler = debounce(handleInput, 300); input.addEventListener(&#39;input&#39;, debouncedHandler); return () =&gt; { input.removeEventListener(&#39;input&#39;, debouncedHandler); }; }, []); 3. 조건부 적용 // 네트워크 상태에 따른 동적 조정 function adaptiveDebounce(callback, baseDelay = 300) { const isSlowConnection = navigator.connection?.effectiveType === &#39;slow-2g&#39;; const delay = isSlowConnection ? baseDelay * 2 : baseDelay; return debounce(callback, delay); } 실제 프로젝트 적용 사례 1. 쇼핑몰 검색 기능 class SearchManager { constructor() { this.searchInput = document.getElementById(&#39;search&#39;); this.resultsContainer = document.getElementById(&#39;results&#39;); this.setupEventListeners(); } setupEventListeners() { // 디바운스: 검색 요청 최적화 this.searchInput.addEventListener(&#39;input&#39;, debounce((e) =&gt; { this.performSearch(e.target.value); }, 300)); // 쓰로틀: 검색 결과 스크롤 this.resultsContainer.addEventListener(&#39;scroll&#39;, throttle(() =&gt; { this.handleInfiniteScroll(); }, 200)); } async performSearch(query) { if (query.length &lt; 2) return; try { const results = await fetch(`/api/search?q=${query}`); this.displayResults(await results.json()); } catch (error) { console.error(&#39;검색 실패:&#39;, error); } } handleInfiniteScroll() { const { scrollTop, scrollHeight, clientHeight } = this.resultsContainer; if (scrollTop &#43; clientHeight &gt;= scrollHeight - 100) { this.loadMoreResults(); } } } 2. 대시보드 실시간 업데이트 class DashboardManager { constructor() { this.charts = document.querySelectorAll(&#39;.chart&#39;); this.setupRealTimeUpdates(); } setupRealTimeUpdates() { // 쓰로틀: 차트 업데이트 (실시간성 유지) window.addEventListener(&#39;resize&#39;, throttle(() =&gt; { this.resizeCharts(); }, 100)); // 디바운스: 설정 저장 (입력 완료 후) this.setupAutoSave(); } setupAutoSave() { const settingsForm = document.getElementById(&#39;settings&#39;); settingsForm.addEventListener(&#39;change&#39;, debounce(() =&gt; { this.saveSettings(); }, 1000)); } async saveSettings() { const formData = new FormData(settingsForm); try { await fetch(&#39;/api/settings&#39;, { method: &#39;POST&#39;, body: formData }); console.log(&#39;설정 저장 완료&#39;); } catch (error) { console.error(&#39;설정 저장 실패:&#39;, error); } } } 디버깅 팁 1. 실행 횟수 모니터링 function createMonitoredDebounce(callback, delay) { let callCount = 0; const debouncedFunction = debounce((...args) =&gt; { callCount&#43;&#43;; console.log(`디바운스 실행 횟수: ${callCount}`); callback(...args); }, delay); return debouncedFunction; } function createMonitoredThrottle(callback, delay) { let callCount = 0; const throttledFunction = throttle((...args) =&gt; { callCount&#43;&#43;; console.log(`쓰로틀 실행 횟수: ${callCount}`); callback(...args); }, delay); return throttledFunction; } 2. 성능 측정 function measurePerformance(func, name) { return function (...args) { const start = performance.now(); const result = func.apply(this, args); const end = performance.now(); console.log(`${name} 실행 시간: ${end - start}ms`); return result; }; } // 사용 예시 const optimizedSearch = measurePerformance( debounce(searchFunction, 300), &#39;디바운스 검색&#39; ); 마치며 디바운스와 쓰로틀은 각각의 장단점이 있으며, 사용자 경험과 성능을 모두 고려하여 적절히 선택해야 합니다.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-18 00:00:00 +0900 KST'>December 18, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haeun</footer>
+  <a class="entry-link" aria-label="post link to 디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까?" href="//localhost:1313/posts/drafts/debounce-throttle-complete-guide/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 

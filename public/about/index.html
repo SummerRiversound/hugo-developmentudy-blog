@@ -76,11 +76,12 @@
   .post-toc-sidebar {
     position: fixed;
     top: 6rem;
-    left: calc(50% + 600px + 2rem);
+    right: calc(50% + 600px + 2rem);
     width: 280px;
     max-height: calc(100vh - 8rem);
     overflow-y: auto;
     z-index: 100;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .post-toc-sidebar .toc {
@@ -146,9 +147,9 @@
 }
 
  
-@media (max-width: 1199px) {
+@media (max-width: 1800px) {
   .post-toc-sidebar {
-    display: none;
+    opacity: 0;
   }
 
    
@@ -181,11 +182,12 @@
   .post-toc-sidebar {
     position: fixed;
     top: 6rem;
-    left: calc(50% + 600px + 2rem);
+    right: calc(50% + 600px + 2rem);
     width: 280px;
     max-height: calc(100vh - 8rem);
     overflow-y: auto;
     z-index: 100;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .post-toc-sidebar .toc {
@@ -251,9 +253,9 @@
 }
 
  
-@media (max-width: 1199px) {
+@media (max-width: 1800px) {
   .post-toc-sidebar {
-    display: none;
+    opacity: 0;
   }
 
    

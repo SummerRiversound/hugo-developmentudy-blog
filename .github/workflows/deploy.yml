@@ -71,17 +71,36 @@ jobs:
           echo "🔍 Hugo 설정 확인..."
           hugo config
 
-          # hugo.toml에 환경변수 값 직접 설정
+                    # hugo.toml에 환경변수 값 직접 설정
           echo "🔧 hugo.toml에 환경변수 값 설정..."
-          if [ -n "$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID" ]; then
-            sed -i "s/gtagID = \"\"/gtagID = \"$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID\"/" hugo.toml
-            echo "✅ GA gtagID 설정됨"
+                    if [ -n "$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID" ]; then
+            # awk를 사용하여 더 안전하게 수정
+            awk -v gtag="$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID" '
+              /gtagID = ""/ { print "      gtagID = \"" gtag "\""; next }
+              { print }
+            ' hugo.toml > hugo.toml.tmp && mv hugo.toml.tmp hugo.toml
+            echo "✅ GA gtagID 설정됨: ${HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID:0:4}****"
+          else
+            echo "❌ GA gtagID 환경변수 없음"
           fi
 
           if [ -n "$HUGO_PARAMS_ADSENSE_CLIENT_ID" ]; then
-            sed -i "s/clientID = \"\"/clientID = \"$HUGO_PARAMS_ADSENSE_CLIENT_ID\"/" hugo.toml
-            echo "✅ AdSense clientID 설정됨"
+            # awk를 사용하여 더 안전하게 수정
+            awk -v client="$HUGO_PARAMS_ADSENSE_CLIENT_ID" '
+              /clientID = ""/ { print "    clientID = \"" client "\""; next }
+              { print }
+            ' hugo.toml > hugo.toml.tmp && mv hugo.toml.tmp hugo.toml
+            echo "✅ AdSense clientID 설정됨: ${HUGO_PARAMS_ADSENSE_CLIENT_ID:0:8}****"
+          else
+            echo "❌ AdSense clientID 환경변수 없음"
           fi
+
+          # 수정된 hugo.toml 확인
+          echo "🔍 수정된 hugo.toml 확인..."
+          echo "=== analytics 섹션 ==="
+          grep -A 5 "\[params.analytics\]" hugo.toml || echo "analytics 섹션 없음"
+          echo "=== adsense 섹션 ==="
+          grep -A 5 "\[params.adsense\]" hugo.toml || echo "adsense 섹션 없음"
 
           # Hugo 빌드
           echo "🚀 Hugo 빌드 시작..."

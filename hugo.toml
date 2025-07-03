@@ -42,6 +42,15 @@ theme = 'PaperMod'
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
+  # Google Analytics 설정 (환경변수로 관리)
+  [params.analytics]
+    [params.analytics.google]
+      gtagID = ""  # 환경변수 HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID에서 설정
+
+  # Google AdSense 설정 (환경변수로 관리)
+  [params.adsense]
+    clientID = ""  # 환경변수 HUGO_PARAMS_ADSENSE_CLIENT_ID에서 설정
+
 [menu]
   [[menu.main]]
     identifier = "posts"

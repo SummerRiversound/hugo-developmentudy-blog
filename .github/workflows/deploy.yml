@@ -69,7 +69,7 @@ jobs:
 
           # Hugo 설정 확인
           echo "🔍 Hugo 설정 확인..."
-          hugo config --log
+          hugo config
 
           # hugo.toml에 환경변수 값 직접 설정
           echo "🔧 hugo.toml에 환경변수 값 설정..."

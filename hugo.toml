@@ -4,6 +4,8 @@ title = 'Developmentudy Blog'
 theme = 'PaperMod'
 
 [params]
+  env = "production"
+
   # 기본 메타데이터
   description = "개발 공부와 학습 내용을 기록하는 블로그입니다."
   author = "Haeun"
@@ -50,6 +52,8 @@ theme = 'PaperMod'
   # Google AdSense 설정 (환경변수로 관리)
   [params.adsense]
     clientID = ""  # 환경변수 HUGO_PARAMS_ADSENSE_CLIENT_ID에서 설정
+    contentAdSlot = ""  # 환경변수 HUGO_PARAMS_ADSENSE_CONTENT_AD_SLOT에서 설정
+    sidebarAdSlot = ""  # 환경변수 HUGO_PARAMS_ADSENSE_SIDEBAR_AD_SLOT에서 설정
 
 [menu]
   [[menu.main]]

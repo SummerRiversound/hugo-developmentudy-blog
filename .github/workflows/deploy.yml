@@ -52,6 +52,8 @@ jobs:
           # 민감한 정보는 GitHub Secrets에서 가져옴
           HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID: ${{ secrets.GA_MEASUREMENT_ID }}
           HUGO_PARAMS_ADSENSE_CLIENT_ID: ${{ secrets.ADSENSE_CLIENT_ID }}
+          HUGO_PARAMS_ADSENSE_CONTENT_AD_SLOT: ${{ secrets.ADSENSE_CONTENT_AD_SLOT }}
+          HUGO_PARAMS_ADSENSE_SIDEBAR_AD_SLOT: ${{ secrets.ADSENSE_SIDEBAR_AD_SLOT }}
         run: |
           hugo \
             --gc \

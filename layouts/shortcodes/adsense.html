@@ -1,0 +1,21 @@
+{{- if and site.Params.adsense.clientID (hugo.IsProduction | or (eq site.Params.env "production")) }}
+<!-- AdSense 광고 블록 -->
+<div class="adsense-container" style="text-align: center; margin: 2rem 0;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ site.Params.adsense.clientID }}"
+       data-ad-slot="{{ .Get "slot" | default "your-ad-slot-id" }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{{- else }}
+<!-- 개발 환경에서는 광고 블록이 표시되지 않습니다 -->
+<div class="adsense-placeholder" style="text-align: center; margin: 2rem 0; padding: 2rem; background-color: #f5f5f5; border: 2px dashed #ccc; color: #666;">
+  <p>📢 AdSense 광고 블록 (프로덕션 환경에서만 표시)</p>
+  <p>Client ID: {{ site.Params.adsense.clientID | default "설정되지 않음" }}</p>
+  <p>Slot ID: {{ .Get "slot" | default "설정되지 않음" }}</p>
+</div>
+{{- end }}

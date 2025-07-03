@@ -7,7 +7,7 @@ tags = ['hugo', 'blog', 'papermod']
 categories = ['개발']
 +++
 
-안녕하세요! 오늘은 Hugo와 PaperMod 테마를 사용해서 개인 블로그를 만들어보았습니다.
+Hugo와 PaperMod 테마를 사용해서 개인 블로그를 만들어보았습니다.
 
 ## Hugo란?
 

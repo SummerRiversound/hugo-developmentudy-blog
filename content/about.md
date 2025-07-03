@@ -25,6 +25,10 @@ description = '프론트엔드와 풀스택 경험을 두루 갖춘, 협업과 �
 
 ## 💼 경력 (Experience)
 
+### D기업 (2024. 11 ~ )
+- **웹 풀스택 개발자**
+- 웹 기반 B2B IOT 관리 서비스 개발
+
 ### 진지한컴퍼니 (2021.05 ~ 2024.03)
 - **웹 프론트엔드 개발자**
 - 사이드 프로젝트 플랫폼 B2C 서비스 '비사이드' 런칭 및 운영
@@ -32,7 +36,7 @@ description = '프론트엔드와 풀스택 경험을 두루 갖춘, 협업과 �
 - 검색엔진 최적화(SEO), 통계 데이터 시각화(Chart.js)
 - **기술**: Vue.js, JavaScript, Java, Sass, AWS, Git, Jenkins
 
-### 차후 (2019.01 ~ 2021.05)
+### C 기업 (2019.01 ~ 2021.05)
 - **풀스택 개발자**
 - 지하시설물 관리, 도면관리, 역설계, 디지털 트윈 등 GIS 서비스 B2B 솔루션 개발
 - 대기업(기아, LG, 대우건설, 삼성전자 등) 납품 및 커스터마이징 협업
@@ -43,7 +47,7 @@ description = '프론트엔드와 풀스택 경험을 두루 갖춘, 협업과 �
 
 ## 🛠️ 기술 스택 (Skills)
 
-- **프론트엔드**: Javascript, Typescript, Vue.js, React.js, Next.js, Flutter
+- **프론트엔드**: Javascript, Typescript, Vue.js, Nuxt.js, React.js, Next.js, Flutter
 - **백엔드/풀스택**: Java, RDBMS
 - **지도/공간정보**: Openlayers
 - **DevOps/협업**: Git, AWS, Jenkins

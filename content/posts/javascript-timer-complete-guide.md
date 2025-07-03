@@ -9,9 +9,10 @@ categories = ["개발"]
 
 # JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기
 
-안녕하세요! 오늘은 JavaScript의 핵심 기능 중 하나인 **타이머 함수들**에 대해 자세히 알아보겠습니다.
+안녕하세요! JavaScript의 핵심 기능 중 하나인 **타이머 함수들**에 대해 자세히 알아보겠습니다.
 
-웹 개발에서 타이머는 애니메이션, 자동 저장, 폴링, 지연 실행 등 다양한 용도로 사용되는 필수적인 기능입니다. 이 포스팅에서는 `setTimeout`, `setInterval`의 기본 개념부터 실전 활용까지 체계적으로 정리해보겠습니다!
+웹 개발에서 타이머는 애니메이션, 자동 저장, 폴링, 지연 실행 등 다양한 용도로 사용되는 필수적인 기능입니다.
+이 포스팅에서는 `setTimeout`, `setInterval`의 기본 개념부터 실전 활용까지 체계적으로 정리해보겠습니다!
 
 ## 호출 스케줄링이란?
 
@@ -637,20 +638,7 @@ setTimeout(() => {
 ## 마치며
 
 JavaScript 타이머는 웹 개발에서 매우 중요한 기능입니다. 올바르게 사용하면 사용자 경험을 크게 향상시킬 수 있지만, 잘못 사용하면 성능 문제나 메모리 누수를 일으킬 수 있습니다.
-
-### 핵심 포인트:
-- **setTimeout**: 한 번 실행되는 지연 함수
-- **setInterval**: 반복 실행되는 주기 함수
-- **메모리 관리**: 타이머 정리 필수
-- **정확성**: 드리프트 보정 고려
-- **사용자 경험**: 적절한 타이밍 설정
-
-실제 프로젝트에서 이 지식을 활용하여 더 나은 웹 애플리케이션을 만들어보세요!
-
-### 추가 학습 자료
-- [MDN setTimeout](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)
-- [MDN setInterval](https://developer.mozilla.org/ko/docs/Web/API/setInterval)
-- [JavaScript Timing Events](https://www.w3schools.com/js/js_timing.asp)
+특히 코드가 굉장히 지저분해지고 알아보기 힘들게 만드는데 큰 기여(?)를 하는 요소이기 때문에, 선별적으로 사용해야합니다.
 
 ---
 

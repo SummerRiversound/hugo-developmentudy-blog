@@ -62,6 +62,27 @@ jobs:
           echo "ADSENSE_CONTENT_AD_SLOT 설정됨: ${{ secrets.ADSENSE_CONTENT_AD_SLOT != '' }}"
           echo "ADSENSE_SIDEBAR_AD_SLOT 설정됨: ${{ secrets.ADSENSE_SIDEBAR_AD_SLOT != '' }}"
 
+          # Hugo 환경변수 매핑 확인
+          echo "🔍 Hugo 환경변수 매핑 확인..."
+          echo "HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID: $HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID"
+          echo "HUGO_PARAMS_ADSENSE_CLIENT_ID: $HUGO_PARAMS_ADSENSE_CLIENT_ID"
+
+          # Hugo 설정 확인
+          echo "🔍 Hugo 설정 확인..."
+          hugo config --log
+
+          # hugo.toml에 환경변수 값 직접 설정
+          echo "🔧 hugo.toml에 환경변수 값 설정..."
+          if [ -n "$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID" ]; then
+            sed -i "s/gtagID = \"\"/gtagID = \"$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID\"/" hugo.toml
+            echo "✅ GA gtagID 설정됨"
+          fi
+
+          if [ -n "$HUGO_PARAMS_ADSENSE_CLIENT_ID" ]; then
+            sed -i "s/clientID = \"\"/clientID = \"$HUGO_PARAMS_ADSENSE_CLIENT_ID\"/" hugo.toml
+            echo "✅ AdSense clientID 설정됨"
+          fi
+
           # Hugo 빌드
           echo "🚀 Hugo 빌드 시작..."
           hugo \

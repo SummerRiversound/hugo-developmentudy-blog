@@ -51,14 +51,53 @@ jobs:
           HUGO_ENV: production
           # 민감한 정보는 GitHub Secrets에서 가져옴
           HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID: ${{ secrets.GA_MEASUREMENT_ID }}
-          HUGO_PARAMS_ADSENSE_CLIENT_ID: ${{ secrets.ADSENSE_CLIENT_ID }}
+          HUGO_PARAMS_ADSENSE_CLIENT_ID: ${{ secrets.HUGO_PARAMS_ADSENSE_CLIENT_ID }}
           HUGO_PARAMS_ADSENSE_CONTENT_AD_SLOT: ${{ secrets.ADSENSE_CONTENT_AD_SLOT }}
           HUGO_PARAMS_ADSENSE_SIDEBAR_AD_SLOT: ${{ secrets.ADSENSE_SIDEBAR_AD_SLOT }}
         run: |
+          # 환경변수 디버깅 (민감한 정보는 마스킹)
+          echo "🔍 환경변수 디버깅 시작..."
+          echo "GA_MEASUREMENT_ID 설정됨: ${{ secrets.GA_MEASUREMENT_ID != '' }}"
+          echo "ADSENSE_CLIENT_ID 설정됨: ${{ secrets.HUGO_PARAMS_ADSENSE_CLIENT_ID != '' }}"
+          echo "ADSENSE_CONTENT_AD_SLOT 설정됨: ${{ secrets.ADSENSE_CONTENT_AD_SLOT != '' }}"
+          echo "ADSENSE_SIDEBAR_AD_SLOT 설정됨: ${{ secrets.ADSENSE_SIDEBAR_AD_SLOT != '' }}"
+
+          # Hugo 빌드
+          echo "🚀 Hugo 빌드 시작..."
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+          echo "✅ Hugo 빌드 완료"
+
+          # 빌드된 HTML에서 GA/AdSense 코드 확인
+          echo "🔍 빌드된 HTML에서 분석 코드 확인..."
+          if grep -q "gtag" ./public/index.html; then
+            echo "✅ Google Analytics 코드가 HTML에 포함됨"
+          else
+            echo "❌ Google Analytics 코드가 HTML에 없음"
+          fi
+
+          if grep -q "adsbygoogle" ./public/index.html; then
+            echo "✅ Google AdSense 코드가 HTML에 포함됨"
+          else
+            echo "❌ Google AdSense 코드가 HTML에 없음"
+          fi
+
+          # 환경변수 값 확인 (마스킹 처리)
+          echo "🔍 환경변수 값 확인 (마스킹됨):"
+          if [ -n "$HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID" ]; then
+            echo "GA ID: ${HUGO_PARAMS_ANALYTICS_GOOGLE_GTAGID:0:4}****"
+          else
+            echo "GA ID: 설정되지 않음"
+          fi
+
+          if [ -n "$HUGO_PARAMS_ADSENSE_CLIENT_ID" ]; then
+            echo "AdSense ID: ${HUGO_PARAMS_ADSENSE_CLIENT_ID:0:8}****"
+          else
+            echo "AdSense ID: 설정되지 않음"
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

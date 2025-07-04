@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Developmentudy Blog</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Developmentudy Blog</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 02 Jul 2025 22:49:37 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo PaperMod에서 TOC(목차) 완벽 가이드 - 따라다니는 사이드바 만들기</title>
+      <link>//localhost:1313/posts/hugo-papermod-toc-complete-guide/</link>
+      <pubDate>Wed, 02 Jul 2025 22:49:37 +0900</pubDate>
+      <guid>//localhost:1313/posts/hugo-papermod-toc-complete-guide/</guid>
+      <description>Hugo PaperMod 테마에서 우측 사이드바에 따라다니는 TOC(Table of Contents)를 설정하고 커스터마이징하는 방법을 상세히 알아봅니다.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Wed, 02 Jul 2025 22:21:19 +0900</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>프론트엔드와 풀스택 경험을 두루 갖춘, 협업과 소통을 중시하는 개발자 강물소리의 소개 페이지입니다.</description>
+    </item>
+    <item>
+      <title>Hugo PaperMod 블로그 시작하기</title>
+      <link>//localhost:1313/posts/hugo-papermod-blog-start/</link>
+      <pubDate>Wed, 02 Jul 2025 22:21:17 +0900</pubDate>
+      <guid>//localhost:1313/posts/hugo-papermod-blog-start/</guid>
+      <description>Hugo와 PaperMod 테마를 사용해서 개인 블로그를 만들어보았습니다.</description>
+    </item>
+    <item>
+      <title>개발에서 테스트란 무엇인가? - 유닛, 통합, E2E 테스트 쉽게 이해하기</title>
+      <link>//localhost:1313/posts/what-is-testing-in-dev/</link>
+      <pubDate>Wed, 02 Jul 2025 01:01:30 +0900</pubDate>
+      <guid>//localhost:1313/posts/what-is-testing-in-dev/</guid>
+      <description>테스트의 종류와 목적, 그리고 왜 개발자가 테스트를 신경써야 하는지 쉽게 정리해봅니다.</description>
+    </item>
+    <item>
+      <title>JavaScript 타이머 완벽 가이드 - setTimeout, setInterval 마스터하기</title>
+      <link>//localhost:1313/posts/javascript-timer-complete-guide/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/posts/javascript-timer-complete-guide/</guid>
+      <description>JavaScript의 타이머 함수들(setTimeout, setInterval)의 개념, 사용법, 실전 예제와 주의사항까지 완벽하게 정리합니다.</description>
+    </item>
+    <item>
+      <title>디바운스 vs 쓰로틀 완벽 비교 가이드 - 언제 어떤 것을 사용할까?</title>
+      <link>//localhost:1313/posts/drafts/debounce-throttle-complete-guide/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/posts/drafts/debounce-throttle-complete-guide/</guid>
+      <description>디바운스와 쓰로틀의 차이점을 명확히 이해하고, 실전에서 언제 어떤 것을 사용해야 하는지 결정하는 방법을 알아봅니다.</description>
+    </item>
+    <item>
+      <title>리액트를 써야 할까? 개발자의 기술 선택에 대해</title>
+      <link>//localhost:1313/posts/should-we-use-react-tech-choice/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/posts/should-we-use-react-tech-choice/</guid>
+      <description>우리는 어떤 기술을 써야할까?</description>
+    </item>
+  </channel>
+</rss>

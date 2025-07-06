@@ -6,8 +6,15 @@
     <description>Recent content on Developmentudy Blog</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 02 Jul 2025 22:49:37 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jul 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심</title>
+      <link>//localhost:1313/posts/javascript-throttle-guide/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/posts/javascript-throttle-guide/</guid>
+      <description>쓰로틀의 개념, 동작 원리, 활용 팁까지, 프론트엔드 개발에서 꼭 알아야 할 쓰로틀 패턴.</description>
+    </item>
     <item>
       <title>Hugo PaperMod에서 TOC(목차) 완벽 가이드 - 따라다니는 사이드바 만들기</title>
       <link>//localhost:1313/posts/hugo-papermod-toc-complete-guide/</link>
@@ -70,13 +77,6 @@
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0900</pubDate>
       <guid>//localhost:1313/posts/drafts/javascript-debounce-guide/</guid>
       <description>디바운스의 개념, 동작 원리, 실전 예제와 활용 팁까지, 프론트엔드 개발에서 꼭 알아야 할 디바운스 패턴을 정리합니다.</description>
-    </item>
-    <item>
-      <title>쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심</title>
-      <link>//localhost:1313/posts/javascript-throttle-guide/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0900</pubDate>
-      <guid>//localhost:1313/posts/javascript-throttle-guide/</guid>
-      <description>쓰로틀의 개념, 동작 원리, 활용 팁까지, 프론트엔드 개발에서 꼭 알아야 할 쓰로틀 패턴.</description>
     </item>
     <item>
       <title>JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기</title>

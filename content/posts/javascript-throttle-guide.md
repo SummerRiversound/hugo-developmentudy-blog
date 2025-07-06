@@ -1,7 +1,7 @@
 +++
 title = "쓰로틀(Throttle) 완벽 가이드 - 스크롤/이벤트 최적화의 핵심"
-date = 2024-12-18T00:00:00+09:00
-draft = true
+date = 2025-07-06T00:00:00+09:00
+draft = false
 description = "쓰로틀의 개념, 동작 원리, 활용 팁까지, 프론트엔드 개발에서 꼭 알아야 할 쓰로틀 패턴."
 tags = ["javascript", "쓰로틀", "이벤트", "최적화", "프론트엔드"]
 categories = ["개발"]

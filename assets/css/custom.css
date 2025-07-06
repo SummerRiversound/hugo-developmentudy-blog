@@ -1,12 +1,12 @@
 /* 사이드바 TOC 스타일 */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .post-single-grid {
     display: grid;
     grid-template-columns: 1fr 300px;
     gap: 2rem;
     align-items: start;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   .post-main {

@@ -1,21 +1,21 @@
 /* 사이드바 TOC 스타일 - 컨텐츠 영역을 침범하지 않고 여백에 배치 */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .post-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   .post-single {
-    /* 컨텐츠 영역을 1200px로 확장 */
-    max-width: 1200px;
+    /* 컨텐츠 영역을 1000px로 확장 */
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   .post-toc-sidebar {
     position: fixed;
     top: 6rem;
-    right: calc(50% + 600px + 2rem);
+    right: calc(50% + 500px + 2rem);
     width: 280px;
     max-height: calc(100vh - 8rem);
     overflow-y: auto;

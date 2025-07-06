@@ -93,6 +93,34 @@
       <description></description>
     </item>
     <item>
+      <title>복원문제</title>
+      <link>//localhost:1313/tags/%EB%B3%B5%EC%9B%90%EB%AC%B8%EC%A0%9C/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/tags/%EB%B3%B5%EC%9B%90%EB%AC%B8%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>실기</title>
+      <link>//localhost:1313/tags/%EC%8B%A4%EA%B8%B0/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/tags/%EC%8B%A4%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>자격증</title>
+      <link>//localhost:1313/tags/%EC%9E%90%EA%B2%A9%EC%A6%9D/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/tags/%EC%9E%90%EA%B2%A9%EC%A6%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>정보처리기사</title>
+      <link>//localhost:1313/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0900</pubDate>
+      <guid>//localhost:1313/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Javascript</title>
       <link>//localhost:1313/tags/javascript/</link>
       <pubDate>Fri, 20 Dec 2024 00:00:00 +0900</pubDate>

@@ -1,7 +1,7 @@
 +++
 title = "JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기"
 date = 2024-12-17T00:00:00+09:00
-draft = true
+draft = false
 description = "JavaScript의 동기와 비동기 처리 방식의 차이점을 이해하고, 실제 활용 사례를 통해 비동기 프로그래밍을 마스터합니다."
 tags = ["javascript", "비동기", "동기", "async", "await", "promise"]
 categories = ["개발"]

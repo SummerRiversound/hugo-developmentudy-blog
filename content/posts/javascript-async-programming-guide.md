@@ -7,7 +7,7 @@ tags = ["javascript", "비동기", "동기", "async", "await", "promise"]
 categories = ["개발"]
 +++
 
-# JavaScript 비동기 프로그래밍 완벽 가이드 - 동기 vs 비동기 이해하기
+
 
 JavaScript 개발에서 가장 중요한 개념 중 하나인 **비동기 프로그래밍**에 대해 써보려합니다.
 
